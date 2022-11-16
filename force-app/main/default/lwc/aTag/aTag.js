@@ -59,6 +59,7 @@ export default class ATag extends NavigationMixin(LightningElement) {
       return;
     }
     if (typeof this.href === "object") {
+      e.preventDefault();
       this[NavigationMixin.Navigate](this.href);
     }
   }
